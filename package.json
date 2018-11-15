@@ -7,13 +7,15 @@
     "test": "npm install --save express socket.io",
     "add": "npm install -–save-dev babel-core babel-loader babel-preset-env babel-preset-react css-loader style-loader html-webpack-plugin optimize-js-plugin react-hot-loader webpack webpack-cli webpack-dev-server",
     "build": "webpack --env production",
-    "start": "webpack-dev-server --hot --env development"
+    "start:dev": "webpack-dev-server --hot --env development",
+    "start": "node index.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
     "babel-core": "^6.26.3",
+    "babel-polyfill": "^6.26.0",
     "babel-preset-env": "^1.7.0",
     "babel-preset-react": "^6.24.1",
     "css-loader": "^1.0.1",
